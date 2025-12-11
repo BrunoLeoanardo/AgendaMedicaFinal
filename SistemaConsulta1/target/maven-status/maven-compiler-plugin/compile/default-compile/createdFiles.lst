@@ -15,6 +15,7 @@ ufrpe\prog2\sistemaconsulta1\gui\GUIListaAgendamentos$2.class
 ufrpe\prog2\sistemaconsulta1\gui\GUICadastroMedico$3.class
 ufrpe\prog2\sistemaconsulta1\negocio\DadosInvalidosException.class
 ufrpe\prog2\sistemaconsulta1\gui\GUICadastroPaciente$8.class
+ufrpe\prog2\sistemaconsulta1\negocio\Validavel.class
 ufrpe\prog2\sistemaconsulta1\gui\MenuInicial$4.class
 ufrpe\prog2\sistemaconsulta1\gui\GUIListaPacientes$2.class
 ufrpe\prog2\sistemaconsulta1\negocio\Paciente.class
@@ -39,6 +40,7 @@ ufrpe\prog2\sistemaconsulta1\gui\GUICadastroPaciente$2.class
 ufrpe\prog2\sistemaconsulta1\gui\GUICadastroPaciente.class
 ufrpe\prog2\sistemaconsulta1\gui\GUICadastroAgendamento.class
 ufrpe\prog2\sistemaconsulta1\gui\GUIListaPacientes$1.class
+ufrpe\prog2\sistemaconsulta1\negocio\Pessoa.class
 ufrpe\prog2\sistemaconsulta1\gui\GUICadastroPaciente$4.class
 ufrpe\prog2\sistemaconsulta1\gui\GUIListaMedicos.class
 ufrpe\prog2\sistemaconsulta1\gui\GUICadastroAgendamento$4.class

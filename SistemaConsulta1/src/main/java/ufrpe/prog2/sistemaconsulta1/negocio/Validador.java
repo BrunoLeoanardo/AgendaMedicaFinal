@@ -28,7 +28,7 @@ public class Validador {
     public static void validarTelefone(String telefone) throws DadosInvalidosException {
         if (telefone == null || !telefone.matches("\\d{2}\\d{9}")) {
             throw new DadosInvalidosException(
-                    "Telefone inválido: deve ser DDD (2 dígitos) + número (8 dígitos)."
+                    "Telefone inválido: deve ser DDD (2 dígitos) + número (9 dígitos)."
             );
         }
     }

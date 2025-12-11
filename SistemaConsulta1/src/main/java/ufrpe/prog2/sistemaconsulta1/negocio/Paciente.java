@@ -8,23 +8,28 @@ package ufrpe.prog2.sistemaconsulta1.negocio;
  *
  * @author nini
  */
-public class Paciente {
-    private String nome;
+public class Paciente extends Pessoa implements Validavel {
     private String cpf;
     private String telefone;
     private String email;
 
     public Paciente(String nome, String cpf, String telefone, String email) {
-        this.nome = nome;
+        super(nome);
         this.cpf = cpf;
         this.telefone = telefone;
         this.email = email;
     }
 
+    @Override
     public String getNome() {
         return nome;
     }
 
+    /**
+     *
+     * @param nome
+     */
+    @Override
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -54,7 +59,14 @@ public class Paciente {
     }
 
     @Override
-    public String toString() {
-        return nome + " - CPF: " + cpf;
+    public String exibirInfo() {
+        return "Paciente: " + nome + " | CPF: " + cpf + " | Email: " + email;
+    }
+    
+    @Override
+    public void validar() throws DadosInvalidosException {
+        Validador.validarCPF(cpf);
+        Validador.validarEmail(email);
+        Validador.validarTelefone(telefone);
     }
 }

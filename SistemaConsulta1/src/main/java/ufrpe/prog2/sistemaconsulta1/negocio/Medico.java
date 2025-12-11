@@ -8,19 +8,24 @@ package ufrpe.prog2.sistemaconsulta1.negocio;
  *
  * @author nini
  */
-public class Medico {
-    private String nome;
+public class Medico extends Pessoa {
     private String especialidade;
 
     public Medico(String nome, String especialidade) {
-        this.nome = nome;
+        super(nome);
         this.especialidade = especialidade;
     }
 
+    @Override
     public String getNome() {
         return nome;
     }
 
+    /**
+     *
+     * @param nome
+     */
+    @Override
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -32,9 +37,9 @@ public class Medico {
     public void setEspecialidade(String especialidade) {
         this.especialidade = especialidade;
     }
-
+    
     @Override
-    public String toString() {
-        return nome + " - " + especialidade;
+    public String exibirInfo() {
+        return "Médico: " + nome + " | Especialidade: " + especialidade;
     }
 }

@@ -55,6 +55,7 @@ public class Fachada {
         Validador.validarTelefone(telefone);
 
         Paciente p = new Paciente(nome, cpf, telefone, email);
+        p.validar();
         BancoDeDados.getInstance().getPacientesInternal().add(p);
     }
 
